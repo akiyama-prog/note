@@ -1,7 +1,13 @@
 $main-color : #2cb696;
-$text-color:rgb(97, 92, 92);
+$text-color:#787c7b;
+body{
+    margin: 0;
+}
 header {
     color: $text-color;
+    border-bottom: solid 1px $text-color;
+    padding: 1rem;
+    padding-bottom: 0;
     .main-header{
         display: flex;
         justify-content: space-between;
@@ -43,9 +49,54 @@ header {
         margin: 1rem;
         .badge{
             background-color: $text-color;
+            padding: .1rem .3rem;
+            border-radius: .3rem;
             color: white;
-            padding: .5rem;
         }
     }
-
+}
+main{
+    padding: 1.5rem;
+}
+.left-navi{
+    color: $text-color;
+    .acd-check{
+        display: none;
+    }
+    label:before{
+        content: '\f054';
+        font-family: 'Font Awesome 5 Free';
+        padding-right: 8px;
+        font-weight: 900;
+    }
+    .acd-check:checked + label:before{
+        content: '\f078';
+    }
+    .acd-content{
+        color: $text-color;
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+        ul{
+            list-style: none;
+        }
+        li{
+            cursor: pointer;
+            &:hover{
+                color: black;
+                background-color: #e5e9e8;
+            }
+        }
+    }
+    .acd-label{
+        cursor: pointer;
+        &:hover{
+            color: black;
+        }
+    }
+    .acd-check:checked + .acd-label + .acd-content{
+        visibility: visible;
+        height: auto;
+        opacity: 1;
+    }
 }

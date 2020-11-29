@@ -1,5 +1,12 @@
+body {
+  margin: 0;
+}
+
 header {
-  color: #615c5c;
+  color: #787c7b;
+  border-bottom: solid 1px #787c7b;
+  padding: 1rem;
+  padding-bottom: 0;
 }
 
 header .main-header {
@@ -58,8 +65,66 @@ header li {
 }
 
 header li .badge {
-  background-color: #615c5c;
+  background-color: #787c7b;
+  padding: .1rem .3rem;
+  border-radius: .3rem;
   color: white;
-  padding: .5rem;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+.left-navi {
+  color: #787c7b;
+}
+
+.left-navi .acd-check {
+  display: none;
+}
+
+.left-navi label:before {
+  content: '\f054';
+  font-family: 'Font Awesome 5 Free';
+  padding-right: 8px;
+  font-weight: 900;
+}
+
+.left-navi .acd-check:checked + label:before {
+  content: '\f078';
+}
+
+.left-navi .acd-content {
+  color: #787c7b;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.left-navi .acd-content ul {
+  list-style: none;
+}
+
+.left-navi .acd-content li {
+  cursor: pointer;
+}
+
+.left-navi .acd-content li:hover {
+  color: black;
+  background-color: #e5e9e8;
+}
+
+.left-navi .acd-label {
+  cursor: pointer;
+}
+
+.left-navi .acd-label:hover {
+  color: black;
+}
+
+.left-navi .acd-check:checked + .acd-label + .acd-content {
+  visibility: visible;
+  height: auto;
+  opacity: 1;
 }
 /*# sourceMappingURL=all.css.map */
