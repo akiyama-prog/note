@@ -57,9 +57,13 @@ header {
 }
 main{
     padding: 1.5rem;
+    width: 97%;
+    display: flex;
 }
 .left-navi{
     color: $text-color;
+    flex: 1;
+    order: 1;
     .acd-check{
         display: none;
     }
@@ -98,5 +102,22 @@ main{
         visibility: visible;
         height: auto;
         opacity: 1;
+    }
+}
+.right-navi{
+    flex: 1;
+    order: 3;
+}
+.good{
+    color: red;
+}
+
+.contents{
+    flex: 2;
+    order: 2;
+    margin: 0 3rem;
+    a{
+        color: black;
+        text-decoration: none;
     }
 }
