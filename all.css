@@ -147,8 +147,31 @@ main {
           order: 3;
 }
 
+.small {
+  font-size: small;
+  margin-left: .5rem;
+}
+
+.small .gray {
+  color: #787c7b;
+}
+
+.icon-gray {
+  font-size: 1.5rem;
+  color: #787c7b;
+}
+
+.fa-book-open {
+  margin-right: 1rem;
+}
+
 .good {
   color: red;
+  font-size: .9rem;
+}
+
+.good .fa-heart {
+  margin-right: .3rem;
 }
 
 .contents {
@@ -164,5 +187,39 @@ main {
 .contents a {
   color: black;
   text-decoration: none;
+}
+
+.contents img {
+  width: 100%;
+  height: auto;
+}
+
+.contents .article {
+  border-bottom: 1px solid #787c7b;
+  padding: 3rem 0;
+}
+
+.contents .article .icon {
+  background-color: #2cb696;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.contents .article .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contents .article:first-child {
+  padding-top: 0;
 }
 /*# sourceMappingURL=all.css.map */

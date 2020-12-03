@@ -108,8 +108,26 @@ main{
     flex: 1;
     order: 3;
 }
+.small{
+    font-size: small;
+    margin-left: .5rem;
+    .gray{
+        color: $text-color;
+    }
+}
+.icon-gray{
+    font-size: 1.5rem;
+    color: $text-color;
+}
+.fa-book-open{
+    margin-right: 1rem;
+}
 .good{
     color: red;
+    font-size: .9rem;
+    .fa-heart{
+        margin-right: .3rem;
+    }
 }
 
 .contents{
@@ -119,5 +137,30 @@ main{
     a{
         color: black;
         text-decoration: none;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .article{
+        border-bottom: 1px solid $text-color;
+        padding: 3rem 0;
+                .icon{
+                    background-color: $main-color;
+                    border-radius: 50%;
+                    width: 2rem;
+                    height: 2rem;
+                    text-align: center;
+                    color: white;
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+        .flex{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .article:first-child{
+        padding-top:0;
     }
 }
