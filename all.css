@@ -4,7 +4,7 @@ body {
 
 header {
   color: #787c7b;
-  border-bottom: solid 1px #787c7b;
+  border-bottom: solid 1px #a8abb1;
   padding: 1rem;
   padding-bottom: 0;
 }
@@ -105,7 +105,7 @@ main {
 }
 
 .left-navi .acd-content {
-  color: #787c7b;
+  color: #a8abb1;
   height: 0;
   opacity: 0;
   visibility: hidden;
@@ -158,7 +158,7 @@ main {
 
 .icon-gray {
   font-size: 1.5rem;
-  color: #787c7b;
+  color: #a8abb1;
 }
 
 .fa-book-open {
@@ -195,7 +195,7 @@ main {
 }
 
 .contents .article {
-  border-bottom: 1px solid #787c7b;
+  border-bottom: 1px solid #a8abb1;
   padding: 3rem 0;
 }
 
@@ -254,7 +254,7 @@ main {
 }
 
 .right-navi .section .box {
-  border: #787c7b 1px solid;
+  border: #a8abb1 1px solid;
   border-radius: .2rem;
   margin-top: 1rem;
 }
@@ -281,6 +281,20 @@ main {
 
 .right-navi .section .box small .small {
   font-size: .5rem;
+}
+
+.right-navi .section .recomend {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: #a8abb1 1px solid;
+}
+
+.right-navi .section .recomend img {
+  padding-bottom: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: .2rem;
 }
 
 .follow-img {
