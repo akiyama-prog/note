@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   color: #787c7b;
   border-bottom: solid 1px #a8abb1;
@@ -304,6 +308,40 @@ main {
 .right-navi .section .theme {
   font-size: 1.3rem;
   margin-bottom: 0;
+}
+
+.right-navi .twitter {
+  background-color: #f7f9f9;
+  border-radius: .4rem;
+  padding: .8rem;
+  margin-top: 2.5rem;
+}
+
+.right-navi .twitter .small {
+  margin-left: 0;
+}
+
+.right-navi .twitter .title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.right-navi .twitter .account-button {
+  background-color: #55acee;
+  border-color: #55acee;
+  color: white;
+  border-radius: .2rem;
+  width: 93%;
+  padding: .5rem;
+  text-align: center;
+}
+
+.right-navi .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
 }
 
 .follow-img {

@@ -4,6 +4,9 @@ $light-gray:#a8abb1;
 body{
     margin: 0;
 }
+a{
+    text-decoration: none;
+}
 header {
     color: $text-color;
     border-bottom: solid 1px $light-gray;
@@ -230,6 +233,34 @@ main{
             font-size: 1.3rem;
             margin-bottom: 0;
         }
+    }
+    .twitter{
+        background-color: #f7f9f9;
+        border-radius: .4rem;
+        padding: .8rem;
+        margin-top: 2.5rem;
+        .small{
+            margin-left: 0;
+        }
+        .title{
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        .account-button{
+            background-color: #55acee;
+            border-color: #55acee;
+            color: white;
+            border-radius: .2rem;
+            width: 93%;
+            padding: .5rem;
+            text-align: center;
+
+        }
+    }
+    .footer{
+        display: flex;
+        margin-top: 2rem;
     }
 }
 .follow-img{
