@@ -223,6 +223,13 @@ main{
                 border-radius: .2rem;
             }
         }
+        .border-bottom{
+            border-bottom: $light-gray 1px solid;
+        }
+        .theme{
+            font-size: 1.3rem;
+            margin-bottom: 0;
+        }
     }
 }
 .follow-img{

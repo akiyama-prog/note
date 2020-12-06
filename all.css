@@ -297,6 +297,15 @@ main {
   border-radius: .2rem;
 }
 
+.right-navi .section .border-bottom {
+  border-bottom: #a8abb1 1px solid;
+}
+
+.right-navi .section .theme {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
 .follow-img {
   width: 5rem;
   height: 3rem;
