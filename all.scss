@@ -1,11 +1,13 @@
 $main-color : #2cb696;
 $text-color:#787c7b;
 $light-gray:#a8abb1;
+$hover: #f2f8f7;
 body{
     margin: 0;
 }
 a{
     text-decoration: none;
+    color: black;
 }
 header {
     color: $text-color;
@@ -51,6 +53,17 @@ header {
     }
     li{
         margin: 1rem;
+        &:first-child{
+            color: black;
+            border-bottom: black 2px solid;
+            margin-bottom: 0;
+        }
+        &:hover{
+            color: black;
+            cursor: pointer;
+            border-bottom: black 2px solid;
+            margin-bottom: 0;
+        }
         .badge{
             background-color: $text-color;
             padding: .1rem .3rem;
@@ -92,7 +105,7 @@ main{
             cursor: pointer;
             &:hover{
                 color: black;
-                background-color: #e5e9e8;
+                background-color: $hover;
             }
         }
     }
@@ -107,10 +120,6 @@ main{
         height: auto;
         opacity: 1;
     }
-}
-.right-navi{
-    flex: 1;
-    order: 3;
 }
 .small{
     font-size: small;
@@ -148,17 +157,21 @@ main{
     }
     .article{
         border-bottom: 1px solid $light-gray;
-        padding: 3rem 0;
-                .icon{
-                    background-color: $main-color;
-                    border-radius: 50%;
-                    width: 2rem;
-                    height: 2rem;
-                    text-align: center;
-                    color: white;
-                    display: table-cell;
-                    vertical-align: middle;
-                }
+        padding: 1rem;
+
+        .icon{
+            background-color: $main-color;
+            border-radius: 50%;
+            width: 2rem;
+            height: 2rem;
+            text-align: center;
+            color: white;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        &:hover{
+            background-color: $hover;
+        }
 
     }
     .article:first-child{
@@ -170,11 +183,19 @@ main{
     }
 }
 .right-navi{
+    flex: 1;
+    order: 3;
     .section{
         margin-top: 1rem;
+        .hover{
+            &:hover{
+                background-color:$hover;
+            }
+        }
         .flex{
             display: flex;
             align-items: center;
+
             p{
                 margin-left: 1rem;
                 margin-top: 1rem;
@@ -187,7 +208,7 @@ main{
                 }
             }
             img{
-                margin-top: 1rem;
+                margin: .5rem;
             }
         }
         .box{
@@ -219,6 +240,10 @@ main{
         .recomend{
             justify-content: space-between;
             border-bottom: $light-gray 1px solid;
+            padding-left: .5rem;
+            &:hover{
+                background-color: $hover;
+            }
             img{
                 padding-bottom: 1rem;
                 width: 3rem;
@@ -228,6 +253,10 @@ main{
         }
         .border-bottom{
             border-bottom: $light-gray 1px solid;
+            padding: .3rem;
+            &:hover{
+                background-color: $hover;
+            }
         }
         .theme{
             font-size: 1.3rem;
