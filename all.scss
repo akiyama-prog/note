@@ -9,6 +9,10 @@ a{
     text-decoration: none;
     color: black;
 }
+/*----------
+header
+-----------*/
+/*-- PC --*/
 header {
     color: $text-color;
     border-bottom: solid 1px $light-gray;
@@ -72,12 +76,37 @@ header {
         }
     }
 }
+/*-- SP --*/
+@media screen and (max-width:767px){
+    header{
+        .main-header{
+            width: 90%;
+        }
+    }
+}
+/*--------
+メイン
+---------*/
+/*-- PC --*/
 main{
     padding: 1.5rem;
     width: 90%;
     display: flex;
 }
-.left-navi{
+
+/*-- SP --*/
+@media screen and (max-width:767px){
+    main{
+        padding: 0;
+        width: 100%;
+        display: block;
+    }
+}
+/*------
+leftナビ
+-------*/
+/*-- PC --*/
+#left-navi{
     color: $text-color;
     flex: 1;
     order: 1;
@@ -128,22 +157,31 @@ main{
 .gray{
     color: $text-color;
 }
-.icon-gray{
+.action-buttons{
     font-size: 1.5rem;
     color: $light-gray;
 }
 .fa-book-open{
     margin-right: 1rem;
 }
-.good{
+.good-button{
     color: red;
     font-size: .9rem;
     .fa-heart{
         margin-right: .3rem;
     }
 }
-
-.contents{
+/*-- SP --*/
+@media screen and (max-width:767px){
+    #left-navi{
+        display: none;
+    }
+}
+/*--------
+メインコンテンツ
+-----------*/
+/*-- PC --*/
+#contents{
     flex: 2;
     order: 2;
     margin: 0 3rem;
@@ -159,7 +197,7 @@ main{
         border-bottom: 1px solid $light-gray;
         padding: 1rem;
 
-        .icon{
+        .author-icon{
             background-color: $main-color;
             border-radius: 50%;
             width: 2rem;
@@ -177,12 +215,28 @@ main{
     .article:first-child{
         padding-top:0;
     }
-    .flex{
+    .article-info, .author-info{
         display: flex;
         justify-content: space-between;
     }
 }
-.right-navi{
+/*-- SP --*/
+@media screen and (max-width:767px){
+    #contents{
+        display: block;
+        margin: 0 auto;
+        width: 94%;
+        .article{
+            padding: 0;
+        }
+    }
+}
+
+/*--------
+rightナビ
+---------*/
+/*-- PC --*/
+#right-navi{
     flex: 1;
     order: 3;
     .section{
@@ -287,7 +341,11 @@ main{
 
         }
     }
-    .footer{
+}
+.side-footer{
+    nav{
+        flex: 1;
+        order:3;
         display: flex;
         margin-top: 2rem;
     }
@@ -296,4 +354,11 @@ main{
     width: 5rem;
     height: 3rem;
     border-radius: .2rem;
+}
+
+/*-- SP --*/
+@media screen and (max-width:767px){
+    #right-navi{
+        display: none;
+    }
 }
