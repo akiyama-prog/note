@@ -79,8 +79,13 @@ header {
 /*-- SP --*/
 @media screen and (max-width:767px){
     header{
+        padding: 0;
         .main-header{
             width: 90%;
+            margin: 0 auto;
+            .items{
+                padding-top: 10px;
+            }
         }
     }
 }
