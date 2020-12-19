@@ -189,6 +189,7 @@ leftナビ
 @media screen and (max-width:767px){
     #left-navi{
         display: none;
+        order: 3;
     }
 }
 /*--------
@@ -255,15 +256,14 @@ rightナビ
     order: 3;
     .section{
         margin-top: 1rem;
-        .hover{
+        .follow-content{
             &:hover{
                 background-color:$hover;
             }
         }
-        .flex{
+        .flex,.follow-content{
             display: flex;
             align-items: center;
-
             p{
                 margin-left: 1rem;
                 margin-top: 1rem;
@@ -372,7 +372,38 @@ rightナビ
 
 /*-- SP --*/
 @media screen and (max-width:767px){
-    #right-navi{
+    .none-sp{
         display: none;
+        order: 1;
+    }
+    .follow{
+        color: $light-gray;
+
+    }
+    #right-navi{
+        .follow-sp{
+            display: flex;
+            justify-content: space-between;
+        }
+        .section{
+            .flex{
+                p{
+                    font-weight: lighter;
+                    &:first-child{
+                        margin: 8px;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .follow-content{
+                display: block;
+                width: calc(100% / 4);
+                .text-overfllow{
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+            }
+        }
     }
 }
