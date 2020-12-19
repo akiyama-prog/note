@@ -87,6 +87,15 @@ header {
                 padding-top: 10px;
             }
         }
+        nav{
+            overflow: auto;
+            white-space: nowrap;
+            ul{
+                padding:0 1rem;
+                margin-right: 1rem;
+                font-size: 13px;
+            }
+        }
     }
 }
 /*--------

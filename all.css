@@ -106,6 +106,15 @@ header li .badge {
   header .main-header .items {
     padding-top: 10px;
   }
+  header nav {
+    overflow: auto;
+    white-space: nowrap;
+  }
+  header nav ul {
+    padding: 0 1rem;
+    margin-right: 1rem;
+    font-size: 13px;
+  }
 }
 
 /*--------
