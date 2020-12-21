@@ -228,13 +228,100 @@ leftナビ
   margin-right: .3rem;
 }
 
+#sp-left-navi {
+  display: none;
+}
+
 /*-- SP --*/
 @media screen and (max-width: 767px) {
   #left-navi {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     display: none;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+  }
+  #sp-left-navi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: #787c7b;
+    margin: 1rem;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  #sp-left-navi .acd-check {
+    display: none;
+  }
+  #sp-left-navi .theme {
+    position: relative;
+    display: inline-block;
+  }
+  #sp-left-navi .acd-label {
+    border: 1px #a8abb1 solid;
+    padding: .5rem;
+    margin: .3rem;
+    border-radius: 2rem;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  #sp-left-navi label:after {
+    content: '\f078';
+    font-family: 'Font Awesome 5 Free';
+    padding-right: 8px;
+    font-weight: 900;
+    margin-left: .5rem;
+  }
+  #sp-left-navi .acd-content {
+    display: none;
+    position: absolute;
+    color: #a8abb1;
+    padding: 10px;
+    width: 100px;
+    border: 1px solid #a8abb1;
+  }
+  #sp-left-navi .acd-content ul {
+    list-style: none;
+  }
+  #sp-left-navi .acd-content::before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    right: 60%;
+    border: 15px solid transparent;
+    border-top: 15px solid #a8abb1;
+    margin-left: -15px;
+    -webkit-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
+  }
+  #sp-left-navi .acd-check:checked + .acd-label + .acd-content {
+    display: inline-block;
+    opacity: 1;
+    top: 30px;
+    left: 0px;
+  }
+  .small {
+    font-size: small;
+    margin-left: .5rem;
+  }
+  .gray {
+    color: #787c7b;
+  }
+  .action-buttons {
+    font-size: 1.5rem;
+    color: #a8abb1;
+  }
+  .fa-book-open {
+    margin-right: 1rem;
+  }
+  .good-button {
+    color: red;
+    font-size: .9rem;
+  }
+  .good-button .fa-heart {
+    margin-right: .3rem;
   }
 }
 
@@ -467,9 +554,9 @@ rightナビ
 @media screen and (max-width: 767px) {
   .none-sp {
     display: none;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .follow {
     color: #a8abb1;
